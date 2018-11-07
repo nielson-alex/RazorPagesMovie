@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.Models;
 
 namespace RazorPagesMovie.Models
 {
-    public class RazorPagesMovieContext : DbContext
+    public class RazorPagesMovieLesson08TutorialContext : DbContext
     {
-        public RazorPagesMovieContext (DbContextOptions<RazorPagesMovieContext> options)
+        public RazorPagesMovieLesson08TutorialContext (DbContextOptions<RazorPagesMovieLesson08TutorialContext> options)
             : base(options)
         {
         }
-
-        public DbSet<RazorPagesMovie.Models.Movie> Movie { get; set; }
 
         public DbSet<RazorPagesMovie.Models.Lesson08TutorialMovies> Lesson08TutorialMovies { get; set; }
     }
